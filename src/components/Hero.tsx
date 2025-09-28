@@ -45,9 +45,11 @@ const Hero = () => {
                 <Mail className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
                 Get in Touch
               </Button>
-              <Button variant="outline" size="lg" className="group">
-                <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-                Download Resume
+              <Button variant="outline" size="lg" className="group" asChild>
+                <a href="/Ritika_Pawar_Resume.docx" download="Ritika_Pawar_Resume.docx">
+                  <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                  Download Resume
+                </a>
               </Button>
             </div>
 
