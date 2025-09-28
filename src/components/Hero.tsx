@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Download } from "lucide-react";
+import profileImage from "@/assets/ritika-profile.jpeg";
 
 const Hero = () => {
   return (
@@ -11,6 +12,18 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero content */}
           <div className="space-y-6">
+            {/* Profile Image */}
+            <div className="flex justify-center mb-8">
+              <div className="relative">
+                <img 
+                  src={profileImage} 
+                  alt="Ritika Pawar - Software Engineer" 
+                  className="w-48 h-48 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-accent/10" />
+              </div>
+            </div>
+            
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold tracking-tight">
                 <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
